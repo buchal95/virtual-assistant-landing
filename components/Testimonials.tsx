@@ -50,36 +50,36 @@ export default function Testimonials() {
         
         <div className="grid md:grid-cols-3 gap-8 mb-16">
           {testimonials.map((testimonial, index) => (
-            <div key={index} className="bg-white p-8 rounded-3xl shadow-sm hover:shadow-md transition-all duration-500 transform hover:-translate-y-1 border border-gray-100">
+            <div key={index} className="bg-white p-8 rounded-3xl shadow-sm hover:shadow-md transition-all duration-500 transform hover:-translate-y-1 border border-gray-100 min-h-[400px] flex flex-col">
               <div className="flex mb-4">
                 {[...Array(testimonial.rating)].map((_, i) => (
                   <StarIcon key={i} className="w-5 h-5 text-yellow-400" />
                 ))}
               </div>
               
-              <blockquote className="text-xl font-bold text-gray-900 mb-6">
+              <blockquote className="text-xl font-bold text-gray-900 mb-6 flex-shrink-0">
                 "{testimonial.quote}"
               </blockquote>
               
-              <p className="text-gray-600 mb-6 leading-relaxed">
+              <p className="text-gray-600 mb-8 leading-relaxed flex-grow">
                 {testimonial.details}
               </p>
               
-              <div className="border-t border-gray-200 pt-6">
-                <div className="flex items-center justify-between">
-                  <div className="flex items-center gap-3">
-                    <img 
-                      src={testimonial.avatar} 
-                      alt={testimonial.author}
-                      className="w-12 h-12 rounded-full object-cover border-2 border-emerald-200"
-                    />
-                    <div>
-                      <p className="font-semibold text-gray-900">
-                        {testimonial.author}
-                      </p>
-                    </div>
+              <div className="border-t border-gray-200 pt-6 mt-auto">
+                <div className="flex items-center gap-4 mb-4">
+                  <img 
+                    src={testimonial.avatar} 
+                    alt={testimonial.author}
+                    className="w-12 h-12 rounded-full object-cover border-2 border-emerald-200 flex-shrink-0"
+                  />
+                  <div className="flex-grow min-w-0">
+                    <p className="font-semibold text-gray-900 truncate">
+                      {testimonial.author}
+                    </p>
                   </div>
-                  <div className="bg-gradient-to-r from-emerald-100 to-teal-100 text-emerald-800 px-3 py-1 rounded-full text-sm font-semibold border border-emerald-200">
+                </div>
+                <div className="w-full">
+                  <div className="bg-gradient-to-r from-emerald-100 to-teal-100 text-emerald-800 px-4 py-2 rounded-full text-sm font-semibold border border-emerald-200 text-center">
                     {testimonial.results}
                   </div>
                 </div>
@@ -89,21 +89,25 @@ export default function Testimonials() {
         </div>
         
         <div className="text-center">
-          <div className="inline-flex items-center gap-6 bg-white p-8 rounded-3xl shadow-sm border border-gray-100">
-            <div className="flex">
-              {[...Array(5)].map((_, i) => (
-                <StarIcon key={i} className="w-8 h-8 text-yellow-400" />
-              ))}
+          <div className="inline-flex flex-wrap items-center justify-center gap-6 bg-white p-8 rounded-3xl shadow-sm border border-gray-100 max-w-4xl mx-auto">
+            <div className="flex items-center gap-2">
+              <div className="flex">
+                {[...Array(5)].map((_, i) => (
+                  <StarIcon key={i} className="w-6 h-6 text-yellow-400" />
+                ))}
+              </div>
+              <div className="text-left ml-2">
+                <p className="text-2xl font-bold text-gray-900">4.9/5</p>
+                <p className="text-gray-600 text-sm">Průměrné hodnocení</p>
+              </div>
             </div>
-            <div className="text-left">
-              <p className="text-3xl font-bold text-gray-900">4.9/5</p>
-              <p className="text-gray-600">Průměrné hodnocení</p>
+            
+            <div className="text-center">
+              <p className="text-2xl font-bold text-gray-900">500+</p>
+              <p className="text-gray-600 text-sm">Spokojených klientů</p>
             </div>
-            <div className="text-left">
-              <p className="text-3xl font-bold text-gray-900">500+</p>
-              <p className="text-gray-600">Spokojených klientů</p>
-            </div>
-            <div className="w-16 h-16 rounded-full overflow-hidden border-4 border-emerald-200">
+            
+            <div className="w-16 h-16 rounded-full overflow-hidden border-4 border-emerald-200 flex-shrink-0">
               <img 
                 src="https://images.pexels.com/photos/3184299/pexels-photo-3184299.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&dpr=2" 
                 alt="Happy clients" 
