@@ -36,7 +36,7 @@ export default function ContactForm() {
 
   if (isSubmitted) {
     return (
-      <div id="contact-form" className="max-w-2xl mx-auto bg-white rounded-3xl p-8 md:p-12 text-center">
+      <div id="contact-form" className="max-w-2xl mx-auto bg-white/95 backdrop-blur-sm rounded-3xl p-8 md:p-12 text-center shadow-2xl border border-white/20">
         <div className="text-6xl mb-6">🎉</div>
         <h3 className="text-3xl font-bold text-gray-900 mb-4">
           Děkujeme za váš zájem!
@@ -44,7 +44,7 @@ export default function ContactForm() {
         <p className="text-xl text-gray-600 mb-6">
           Ozveme se vám do 2 hodin s návrhem řešení přesně pro vaše potřeby.
         </p>
-        <div className="bg-green-50 border border-green-200 rounded-2xl p-6">
+        <div className="bg-gradient-to-r from-green-50 to-blue-50 border-2 border-green-200 rounded-2xl p-6">
           <p className="text-green-800 font-semibold">
             ✅ Vaše zpráva byla úspěšně odeslána
           </p>
@@ -57,8 +57,9 @@ export default function ContactForm() {
   }
 
   return (
-    <div id="contact-form" className="max-w-2xl mx-auto bg-white rounded-3xl p-8 md:p-12 shadow-2xl">
+    <div id="contact-form" className="max-w-2xl mx-auto bg-white/95 backdrop-blur-sm rounded-3xl p-8 md:p-12 shadow-2xl border border-white/20">
       <div className="text-center mb-8">
+        <div className="text-4xl mb-4">💬</div>
         <h3 className="text-3xl font-bold text-gray-900 mb-4">
           Získejte ZDARMA konzultaci
         </h3>
@@ -82,7 +83,7 @@ export default function ContactForm() {
                 required
                 value={formData.name}
                 onChange={handleChange}
-                className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
+                className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 bg-white/80"
                 placeholder="Jan Novák"
               />
             </div>
@@ -101,7 +102,7 @@ export default function ContactForm() {
                 required
                 value={formData.email}
                 onChange={handleChange}
-                className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
+                className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 bg-white/80"
                 placeholder="jan@example.com"
               />
             </div>
@@ -121,7 +122,7 @@ export default function ContactForm() {
                 name="phone"
                 value={formData.phone}
                 onChange={handleChange}
-                className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
+                className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 bg-white/80"
                 placeholder="+420 123 456 789"
               />
             </div>
@@ -137,7 +138,7 @@ export default function ContactForm() {
               name="company"
               value={formData.company}
               onChange={handleChange}
-              className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
+              className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 bg-white/80"
               placeholder="Název společnosti"
             />
           </div>
@@ -152,7 +153,7 @@ export default function ContactForm() {
             name="hoursNeeded"
             value={formData.hoursNeeded}
             onChange={handleChange}
-            className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
+            className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 bg-white/80"
           >
             <option value="5-10">5-10 hodin měsíčně</option>
             <option value="10-20">10-20 hodin měsíčně</option>
@@ -175,7 +176,7 @@ export default function ContactForm() {
               rows={4}
               value={formData.message}
               onChange={handleChange}
-              className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 resize-none"
+              className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 resize-none bg-white/80"
               placeholder="Jaké úkoly byste chtěli delegovat? (e-maily, administrativa, zákaznická podpora, research...)"
             />
           </div>
