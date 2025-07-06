@@ -58,10 +58,10 @@ html {
 
 @keyframes pulse-glow {
   0%, 100% {
-    box-shadow: 0 0 20px rgba(59, 130, 246, 0.3);
+    box-shadow: 0 0 20px rgba(34, 197, 94, 0.3);
   }
   50% {
-    box-shadow: 0 0 40px rgba(59, 130, 246, 0.6);
+    box-shadow: 0 0 40px rgba(34, 197, 94, 0.6);
   }
 }
 
@@ -72,12 +72,12 @@ html {
 /* Form focus styles */
 input:focus, textarea:focus, select:focus {
   outline: none;
-  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+  box-shadow: 0 0 0 3px rgba(34, 197, 94, 0.1);
 }
 
 /* Gradient text */
 .gradient-text {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #059669 0%, #0d9488 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -85,14 +85,14 @@ input:focus, textarea:focus, select:focus {
 
 /* Custom button hover effects */
 .btn-primary {
-  background: linear-gradient(135deg, #f97316 0%, #dc2626 100%);
+  background: linear-gradient(135deg, #059669 0%, #0d9488 100%);
   transition: all 0.3s ease;
 }
 
 .btn-primary:hover {
-  background: linear-gradient(135deg, #ea580c 0%, #b91c1c 100%);
+  background: linear-gradient(135deg, #047857 0%, #0f766e 100%);
   transform: translateY(-2px);
-  box-shadow: 0 10px 25px rgba(249, 115, 22, 0.3);
+  box-shadow: 0 10px 25px rgba(5, 150, 105, 0.3);
 }
 
 /* Loading spinner */
@@ -125,8 +125,8 @@ input:focus, textarea:focus, select:focus {
 }
 
 .card-hover:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 
 /* Testimonial cards */
@@ -137,7 +137,7 @@ input:focus, textarea:focus, select:focus {
 
 /* CTA section background */
 .cta-bg {
-  background: linear-gradient(135deg, #1e3a8a 0%, #7c3aed 50%, #3730a3 100%);
+  background: linear-gradient(135deg, #475569 0%, #64748b 50%, #334155 100%);
 }
 
 /* Form validation styles */
@@ -171,7 +171,7 @@ input:focus, textarea:focus, select:focus {
 }
 
 .image-hover:hover img {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .image-hover img {
@@ -181,7 +181,7 @@ input:focus, textarea:focus, select:focus {
 /* Gradient borders */
 .gradient-border {
   position: relative;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #059669 0%, #0d9488 100%);
   padding: 2px;
   border-radius: 1rem;
 }
@@ -202,10 +202,56 @@ input:focus, textarea:focus, select:focus {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+  background: linear-gradient(135deg, #059669, #0d9488);
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(135deg, #2563eb, #7c3aed);
+  background: linear-gradient(135deg, #047857, #0f766e);
+}
+
+/* Service-oriented design elements */
+.service-card {
+  background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+  border: 1px solid #e2e8f0;
+  transition: all 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  border-color: #d1d5db;
+}
+
+/* Soft shadows for service feel */
+.soft-shadow {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+}
+
+.soft-shadow-lg {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* Trust indicators */
+.trust-badge {
+  background: linear-gradient(135deg, #f0fdf4 0%, #ecfdf5 100%);
+  border: 1px solid #bbf7d0;
+  color: #166534;
+}
+
+/* Professional color palette */
+.text-service-primary {
+  color: #059669;
+}
+
+.text-service-secondary {
+  color: #0d9488;
+}
+
+.bg-service-light {
+  background-color: #f0fdf4;
+}
+
+.border-service {
+  border-color: #bbf7d0;
 }

@@ -5,15 +5,15 @@ const painPoints = [
     icon: ClockIcon,
     title: "Ztrácíte 3+ hodiny denně",
     description: "E-maily, administrativa a rutinní úkoly vás zbavují času na důležité věci",
-    color: "text-red-500",
-    bgColor: "bg-red-50",
-    borderColor: "border-red-200"
+    color: "text-amber-600",
+    bgColor: "bg-amber-50",
+    borderColor: "border-amber-200"
   },
   {
     icon: ExclamationTriangleIcon,
     title: "Klienti čekají na odpovědi",
     description: "Zatímco vy řešíte rutinu, důležití klienti ztrácejí trpělivost",
-    color: "text-orange-500",
+    color: "text-orange-600",
     bgColor: "bg-orange-50",
     borderColor: "border-orange-200"
   },
@@ -21,9 +21,9 @@ const painPoints = [
     icon: ChartBarIcon,
     title: "Pomalý růst byznysu",
     description: "Nemůžete se soustředit na strategii a rozvoj, protože všechno děláte sami",
-    color: "text-yellow-500",
-    bgColor: "bg-yellow-50",
-    borderColor: "border-yellow-200"
+    color: "text-rose-600",
+    bgColor: "bg-rose-50",
+    borderColor: "border-rose-200"
   },
   {
     icon: CurrencyDollarIcon,
@@ -59,7 +59,7 @@ export default function PainPoints() {
         
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {painPoints.map((point, index) => (
-            <div key={index} className={`${point.bgColor} ${point.borderColor} border-2 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 backdrop-blur-sm`}>
+            <div key={index} className={`${point.bgColor} ${point.borderColor} border-2 p-8 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 transform hover:-translate-y-1`}>
               <div className={`w-16 h-16 ${point.color} mb-6 mx-auto`}>
                 <point.icon className="w-full h-full" />
               </div>
@@ -74,7 +74,7 @@ export default function PainPoints() {
         </div>
         
         <div className="text-center mt-16">
-          <div className="inline-block bg-gradient-to-r from-red-100 to-orange-100 border-2 border-red-200 rounded-2xl p-8 backdrop-blur-sm">
+          <div className="inline-block bg-gradient-to-r from-red-50 to-orange-50 border-2 border-red-200 rounded-2xl p-8">
             <div className="text-4xl mb-4">😰</div>
             <h3 className="text-2xl font-bold text-red-800 mb-4">
               Výsledek? Vyhoření a stagnace byznysu

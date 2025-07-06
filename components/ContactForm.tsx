@@ -36,7 +36,7 @@ export default function ContactForm() {
 
   if (isSubmitted) {
     return (
-      <div id="contact-form" className="max-w-2xl mx-auto bg-white/95 backdrop-blur-sm rounded-3xl p-8 md:p-12 text-center shadow-2xl border border-white/20">
+      <div id="contact-form" className="max-w-2xl mx-auto bg-white rounded-3xl p-8 md:p-12 text-center shadow-lg border border-gray-200">
         <div className="text-6xl mb-6">🎉</div>
         <h3 className="text-3xl font-bold text-gray-900 mb-4">
           Děkujeme za váš zájem!
@@ -44,11 +44,11 @@ export default function ContactForm() {
         <p className="text-xl text-gray-600 mb-6">
           Ozveme se vám do 2 hodin s návrhem řešení přesně pro vaše potřeby.
         </p>
-        <div className="bg-gradient-to-r from-green-50 to-blue-50 border-2 border-green-200 rounded-2xl p-6">
-          <p className="text-green-800 font-semibold">
+        <div className="bg-gradient-to-r from-emerald-50 to-teal-50 border-2 border-emerald-200 rounded-2xl p-6">
+          <p className="text-emerald-800 font-semibold">
             ✅ Vaše zpráva byla úspěšně odeslána
           </p>
-          <p className="text-green-700 mt-2">
+          <p className="text-emerald-700 mt-2">
             Připravte si seznam úkolů, které byste chtěli delegovat
           </p>
         </div>
@@ -57,7 +57,7 @@ export default function ContactForm() {
   }
 
   return (
-    <div id="contact-form" className="max-w-2xl mx-auto bg-white/95 backdrop-blur-sm rounded-3xl p-8 md:p-12 shadow-2xl border border-white/20">
+    <div id="contact-form" className="max-w-2xl mx-auto bg-white rounded-3xl p-8 md:p-12 shadow-lg border border-gray-200">
       <div className="text-center mb-8">
         <div className="text-4xl mb-4">💬</div>
         <h3 className="text-3xl font-bold text-gray-900 mb-4">
@@ -83,7 +83,7 @@ export default function ContactForm() {
                 required
                 value={formData.name}
                 onChange={handleChange}
-                className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 bg-white/80"
+                className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-emerald-500 focus:border-transparent transition-all duration-200 bg-white"
                 placeholder="Jan Novák"
               />
             </div>
@@ -102,7 +102,7 @@ export default function ContactForm() {
                 required
                 value={formData.email}
                 onChange={handleChange}
-                className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 bg-white/80"
+                className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-emerald-500 focus:border-transparent transition-all duration-200 bg-white"
                 placeholder="jan@example.com"
               />
             </div>
@@ -122,7 +122,7 @@ export default function ContactForm() {
                 name="phone"
                 value={formData.phone}
                 onChange={handleChange}
-                className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 bg-white/80"
+                className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-emerald-500 focus:border-transparent transition-all duration-200 bg-white"
                 placeholder="+420 123 456 789"
               />
             </div>
@@ -138,7 +138,7 @@ export default function ContactForm() {
               name="company"
               value={formData.company}
               onChange={handleChange}
-              className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 bg-white/80"
+              className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-emerald-500 focus:border-transparent transition-all duration-200 bg-white"
               placeholder="Název společnosti"
             />
           </div>
@@ -153,7 +153,7 @@ export default function ContactForm() {
             name="hoursNeeded"
             value={formData.hoursNeeded}
             onChange={handleChange}
-            className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 bg-white/80"
+            className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-emerald-500 focus:border-transparent transition-all duration-200 bg-white"
           >
             <option value="5-10">5-10 hodin měsíčně</option>
             <option value="10-20">10-20 hodin měsíčně</option>
@@ -176,7 +176,7 @@ export default function ContactForm() {
               rows={4}
               value={formData.message}
               onChange={handleChange}
-              className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 resize-none bg-white/80"
+              className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-emerald-500 focus:border-transparent transition-all duration-200 resize-none bg-white"
               placeholder="Jaké úkoly byste chtěli delegovat? (e-maily, administrativa, zákaznická podpora, research...)"
             />
           </div>
@@ -185,7 +185,7 @@ export default function ContactForm() {
         <button
           type="submit"
           disabled={isSubmitting}
-          className="w-full bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 disabled:from-gray-400 disabled:to-gray-500 text-white font-bold py-4 px-8 rounded-xl text-lg transition-all duration-300 transform hover:scale-105 disabled:scale-100 shadow-lg hover:shadow-xl disabled:shadow-none"
+          className="w-full bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-600 hover:to-teal-700 disabled:from-gray-400 disabled:to-gray-500 text-white font-bold py-4 px-8 rounded-xl text-lg transition-all duration-300 transform hover:scale-105 disabled:scale-100 shadow-lg hover:shadow-xl disabled:shadow-none"
         >
           {isSubmitting ? (
             <span className="flex items-center justify-center gap-2">

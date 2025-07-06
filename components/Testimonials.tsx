@@ -11,7 +11,7 @@ const testimonials = [
   },
   {
     quote: "Konečně mám čas na rodinu a byznys roste",
-    author: "Freelancer",
+    author: "Podnikatel",
     details: "Předtím jsem pracoval 12 hodin denně. Teď mám čas na děti a přitom vydělávám víc než kdy předtím.",
     rating: 5,
     results: "50% více volného času",
@@ -29,11 +29,11 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <section className="py-20 bg-gradient-to-br from-blue-50 to-indigo-100 relative overflow-hidden">
+    <section className="py-20 bg-gradient-to-br from-green-50 to-emerald-50 relative overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute inset-0" style={{
-          backgroundImage: 'radial-gradient(circle at 2px 2px, rgba(59, 130, 246, 0.3) 1px, transparent 0)',
+          backgroundImage: 'radial-gradient(circle at 2px 2px, rgba(34, 197, 94, 0.3) 1px, transparent 0)',
           backgroundSize: '30px 30px'
         }}></div>
       </div>
@@ -50,7 +50,7 @@ export default function Testimonials() {
         
         <div className="grid md:grid-cols-3 gap-8 mb-16">
           {testimonials.map((testimonial, index) => (
-            <div key={index} className="bg-white/80 backdrop-blur-sm p-8 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border border-white/50">
+            <div key={index} className="bg-white p-8 rounded-3xl shadow-sm hover:shadow-md transition-all duration-500 transform hover:-translate-y-1 border border-gray-100">
               <div className="flex mb-4">
                 {[...Array(testimonial.rating)].map((_, i) => (
                   <StarIcon key={i} className="w-5 h-5 text-yellow-400" />
@@ -71,7 +71,7 @@ export default function Testimonials() {
                     <img 
                       src={testimonial.avatar} 
                       alt={testimonial.author}
-                      className="w-12 h-12 rounded-full object-cover border-2 border-blue-200"
+                      className="w-12 h-12 rounded-full object-cover border-2 border-emerald-200"
                     />
                     <div>
                       <p className="font-semibold text-gray-900">
@@ -79,7 +79,7 @@ export default function Testimonials() {
                       </p>
                     </div>
                   </div>
-                  <div className="bg-gradient-to-r from-green-100 to-blue-100 text-green-800 px-3 py-1 rounded-full text-sm font-semibold border border-green-200">
+                  <div className="bg-gradient-to-r from-emerald-100 to-teal-100 text-emerald-800 px-3 py-1 rounded-full text-sm font-semibold border border-emerald-200">
                     {testimonial.results}
                   </div>
                 </div>
@@ -89,7 +89,7 @@ export default function Testimonials() {
         </div>
         
         <div className="text-center">
-          <div className="inline-flex items-center gap-6 bg-white/80 backdrop-blur-sm p-8 rounded-3xl shadow-xl border border-white/50">
+          <div className="inline-flex items-center gap-6 bg-white p-8 rounded-3xl shadow-sm border border-gray-100">
             <div className="flex">
               {[...Array(5)].map((_, i) => (
                 <StarIcon key={i} className="w-8 h-8 text-yellow-400" />
@@ -103,7 +103,7 @@ export default function Testimonials() {
               <p className="text-3xl font-bold text-gray-900">500+</p>
               <p className="text-gray-600">Spokojených klientů</p>
             </div>
-            <div className="w-16 h-16 rounded-full overflow-hidden border-4 border-blue-200">
+            <div className="w-16 h-16 rounded-full overflow-hidden border-4 border-emerald-200">
               <img 
                 src="https://images.pexels.com/photos/3184299/pexels-photo-3184299.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&dpr=2" 
                 alt="Happy clients" 

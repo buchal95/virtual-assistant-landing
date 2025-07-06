@@ -29,7 +29,7 @@ const results = [
 
 export default function Results() {
   return (
-    <section className="py-20 bg-gray-900 text-white relative overflow-hidden">
+    <section className="py-20 bg-slate-50 text-gray-900 relative overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0 opacity-10">
         <img 
@@ -37,39 +37,39 @@ export default function Results() {
           alt="Business success" 
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-br from-gray-900/90 to-blue-900/90"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-slate-50/90 to-white/90"></div>
       </div>
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-bold mb-6">
+          <h2 className="text-3xl md:text-5xl font-bold mb-6 text-gray-900">
             Konkrétní výsledky, které uvidíte
           </h2>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Nejsou to jen sliby - toto jsou reálné výsledky našich klientů
           </p>
         </div>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
           {results.map((result, index) => (
-            <div key={index} className="text-center group bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10 hover:bg-white/10 transition-all duration-300">
+            <div key={index} className="text-center group bg-white rounded-2xl p-6 border border-gray-200 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
               <div className="text-6xl mb-6 group-hover:scale-110 transition-transform duration-300">
                 {result.icon}
               </div>
-              <h3 className="text-2xl font-bold mb-2">
+              <h3 className="text-2xl font-bold mb-2 text-gray-900">
                 {result.title}
               </h3>
-              <p className="text-yellow-400 font-semibold mb-4 text-lg">
+              <p className="text-emerald-600 font-semibold mb-4 text-lg">
                 {result.subtitle}
               </p>
-              <p className="text-gray-300">
+              <p className="text-gray-600">
                 {result.description}
               </p>
             </div>
           ))}
         </div>
         
-        <div className="relative bg-gradient-to-r from-green-600 to-blue-600 rounded-3xl p-8 md:p-12 text-center overflow-hidden">
+        <div className="relative bg-gradient-to-r from-emerald-500 to-teal-600 rounded-3xl p-8 md:p-12 text-center overflow-hidden">
           {/* Background Image */}
           <div className="absolute inset-0 opacity-20">
             <img 
@@ -77,21 +77,21 @@ export default function Results() {
               alt="Guarantee" 
               className="w-full h-full object-cover"
             />
-            <div className="absolute inset-0 bg-gradient-to-r from-green-600/80 to-blue-600/80"></div>
+            <div className="absolute inset-0 bg-gradient-to-r from-emerald-500/80 to-teal-600/80"></div>
           </div>
           
           <div className="relative">
             <div className="flex items-center justify-center mb-6">
               <CheckCircleIcon className="w-16 h-16 text-white" />
             </div>
-            <h3 className="text-3xl md:text-4xl font-bold mb-6">
+            <h3 className="text-3xl md:text-4xl font-bold mb-6 text-white">
               Garance spokojenosti
             </h3>
-            <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
+            <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto text-white">
               Pokud nebudete spokojeni s našimi službami během prvních 30 dnů, 
               vrátíme vám peníze bez ptaní
             </p>
-            <div className="text-lg font-semibold bg-white/20 backdrop-blur-sm inline-block px-6 py-3 rounded-full border border-white/30">
+            <div className="text-lg font-semibold bg-white/20 backdrop-blur-sm inline-block px-6 py-3 rounded-full border border-white/30 text-white">
               30denní záruka vrácení peněz
             </div>
           </div>

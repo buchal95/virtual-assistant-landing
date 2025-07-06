@@ -37,7 +37,7 @@ export default function Benefits() {
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute inset-0" style={{
-          backgroundImage: 'radial-gradient(circle at 2px 2px, rgba(59, 130, 246, 0.15) 1px, transparent 0)',
+          backgroundImage: 'radial-gradient(circle at 2px 2px, rgba(34, 197, 94, 0.15) 1px, transparent 0)',
           backgroundSize: '40px 40px'
         }}></div>
       </div>
@@ -46,7 +46,7 @@ export default function Benefits() {
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6">
             Co získáte s našimi
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600"> virtuálními asistenty</span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 to-teal-600"> virtuálními asistenty</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Profesionální podpora bez starostí a vysokých nákladů
@@ -55,7 +55,7 @@ export default function Benefits() {
         
         <div className="grid md:grid-cols-2 gap-8 mb-16">
           {benefits.map((benefit, index) => (
-            <div key={index} className="group relative bg-gradient-to-br from-blue-50 to-indigo-50 p-8 rounded-3xl border border-blue-100 hover:shadow-2xl transition-all duration-500 overflow-hidden">
+            <div key={index} className="group relative bg-gradient-to-br from-green-50 to-emerald-50 p-8 rounded-3xl border border-green-100 hover:shadow-lg transition-all duration-500 overflow-hidden">
               {/* Background Image */}
               <div className="absolute inset-0 opacity-0 group-hover:opacity-10 transition-opacity duration-500">
                 <img 
@@ -66,7 +66,7 @@ export default function Benefits() {
               </div>
               
               <div className="relative flex items-start gap-6">
-                <div className="flex-shrink-0 w-16 h-16 bg-gradient-to-br from-blue-500 to-purple-600 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                <div className="flex-shrink-0 w-16 h-16 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                   <benefit.icon className="w-8 h-8 text-white" />
                 </div>
                 <div className="flex-1">
@@ -76,7 +76,7 @@ export default function Benefits() {
                   <p className="text-gray-700 text-lg leading-relaxed mb-4">
                     {benefit.description}
                   </p>
-                  <div className="inline-block bg-gradient-to-r from-blue-500 to-purple-600 text-white px-4 py-2 rounded-full text-sm font-semibold">
+                  <div className="inline-block bg-gradient-to-r from-emerald-500 to-teal-600 text-white px-4 py-2 rounded-full text-sm font-semibold">
                     {benefit.highlight}
                   </div>
                 </div>
@@ -85,7 +85,7 @@ export default function Benefits() {
           ))}
         </div>
         
-        <div className="relative bg-gradient-to-r from-green-500 to-blue-600 rounded-3xl p-8 md:p-12 text-white text-center overflow-hidden">
+        <div className="relative bg-gradient-to-r from-emerald-500 to-teal-600 rounded-3xl p-8 md:p-12 text-white text-center overflow-hidden">
           {/* Background Image */}
           <div className="absolute inset-0 opacity-20">
             <img 
@@ -93,7 +93,7 @@ export default function Benefits() {
               alt="Happy businessman" 
               className="w-full h-full object-cover"
             />
-            <div className="absolute inset-0 bg-gradient-to-r from-green-500/80 to-blue-600/80"></div>
+            <div className="absolute inset-0 bg-gradient-to-r from-emerald-500/80 to-teal-600/80"></div>
           </div>
           
           <div className="relative">
